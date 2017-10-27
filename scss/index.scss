@@ -1,0 +1,130 @@
+$large: "min-width: 1150px";
+$medium-large: "min-width: 1000px";
+$medium: "min-width: 800px";
+
+$accent: #e06e48;
+$accent-adjusted: #dba26b;
+$secondary: #ffffe6;
+$primary: #4e93ca;
+$tertiary: #9990d3;
+
+
+body{
+	overflow-x: hidden;
+	background: $primary;
+}
+
+@import '_nav';
+
+header{
+	position: relative;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 370px;
+	background: $secondary;
+	#title{
+		position: absolute;
+		top: 50px;
+		left: 0px;
+		transform: skewY(-25deg) scaleY(2);
+		z-index: 10;
+		h1{
+			font-family: 'Fascinate Inline', cursive;
+			position: relative;
+			z-index: 10;
+			font-size: 3rem;
+			color: $accent;
+			margin: 0 0 0 20px;
+			margin-bottom: 0;
+			text-shadow: -2px 2px 5px rgba(100, 100, 100, .6);
+			@media(#{$medium-large}){
+				font-size: 5rem;
+				top: 20px;
+				left: 50px;
+			}
+		}
+		h3{
+			font-family: 'Lato', sans-serif;
+			position: relative;
+			z-index: 10;
+			font-size: 1rem;
+			color: $accent;
+			margin: 0 0 0 70px;
+			text-shadow: -2px 2px 3px rgba(100, 100, 100, .6);
+			@media(#{$medium-large}){
+				margin: 10px 0 0 270px;
+			}
+		}
+	}
+}
+
+section#one{
+	position: absolute;
+	top: 250px;
+	z-index: 0;
+	background: lighten($primary, 10%);
+	width: 100%;
+	height: 700px;
+	transform: skewY(10deg);
+	font-family: 'Lato', sans-serif; 
+	.content-wrapper{
+		display: grid;
+		//grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: 
+			"image"
+			"text";
+		position: relative;
+		top: 70px;
+		left: 0;
+		width: 90%;
+		margin: 0 auto;
+		transform: skewY(-10deg);
+		color: $secondary;
+		@media(#{$medium}){
+			grid-template-columns: 1.5fr 1fr;
+			grid-template-areas: "text image";
+			width: 90%;
+			margin: 0 auto;
+		}
+		@media(#{$medium-large}){
+			grid-template-columns: 1fr 1fr;
+			width: 80%;
+		}
+		@media(#{$large}){
+			width: 70%;
+		}
+		.text{
+			grid-area: text;
+			margin: -20px auto 0;
+			line-height: 1.5;
+			h2{
+				text-align: center;
+				font-family: 'Oswald', sans-serif;
+				font-size: 2rem;
+			}
+			p{
+				font-size: 1.1rem;
+			}
+		}
+		.img-container{
+			grid-area: image;
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			box-shadow: 1px 2px 4px 1px rgba(100, 100, 100, .6);
+			margin: 0 auto;
+			background: $tertiary;
+			@media(#{$medium}){
+				width: 250px;
+				height: 250px;
+			}
+			@media(#{$medium-large}){
+				width: 300px;
+				height: 300px;
+			}
+		}
+	}
+}
+
