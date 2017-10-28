@@ -59,14 +59,13 @@ nav{
 		position: fixed;
 		z-index: 99;
 		transition: transform .3s cubic-bezier(0.46, 0.22, 0.23, 0.99);
-		transform-origin: 130px 0;
+		transform-origin: 140px 0;
 		position: absolute;
 		right: -135px;
-		height: 100vh;
+		height: 650px;
 		width: 400px;
 		transform: rotate(-65deg);
 		@media(#{$large}){
-			transform-origin: 140px 0;
 			right: -120px;
 		}
 		#navBar{
