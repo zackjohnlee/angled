@@ -22,13 +22,13 @@ gulp.task("concatScripts", function(){
 });
 
 //minify concatenated JS files
-gulp.task("minifyScripts", ['concatScripts'], function(){
-	console.log("...minify scripts");
-	return gulp.src("js/app.js")
-	.pipe(uglify())
-	.pipe(rename('app.min.js'))
-	.pipe(gulp.dest('js'));
-});
+// gulp.task("minifyScripts", ['concatScripts'], function(){
+// 	console.log("...minify scripts");
+// 	return gulp.src("js/app.js")
+// 	.pipe(uglify())
+// 	.pipe(rename('app.min.js'))
+// 	.pipe(gulp.dest('./'));
+// });
 
 //sass compile task
 gulp.task("compileSass", function(){
@@ -80,9 +80,9 @@ gulp.task("clear", function(){
 });
 
 //run default task
-gulp.task("build", ['minifyScripts', 'compileSass', 'pug', 'connect', 'watch', 'reload'], function(){
+gulp.task("build", ['compileSass', 'pug', 'connect', 'watch', 'reload'], function(){
 	console.log("...building distribution");
-	return gulp.src(['css/*.css', 'js/app.min.js', 'index.html'], {base: './'})
+	return gulp.src(['css/*.css', 'app.min.js', 'index.html'], {base: './'})
 	.pipe(gulp.dest("dist"));
 });
 

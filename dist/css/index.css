@@ -155,14 +155,30 @@ section#one {
   position: relative;
   top: -150px;
   z-index: 0;
-  background: #75abd6;
+  background: #629fd0;
   width: 100%;
-  height: 850px;
+  height: 950px;
   transform: skewY(10deg);
   font-family: 'Lato', sans-serif; }
+  @media (min-width: 500px) {
+    section#one {
+      height: 950px; } }
+  @media (min-width: 600px) {
+    section#one {
+      height: 1050px; } }
+  @media (min-width: 800px) {
+    section#one {
+      height: 700px; } }
+  @media (min-width: 1000px) {
+    section#one {
+      height: 800px; } }
+  @media (min-width: 1150px) {
+    section#one {
+      height: 800px; } }
   section#one .content-wrapper {
     display: grid;
     grid-template-rows: 100%;
+    grid-gap: 30px;
     grid-template-areas: "image" "text";
     position: relative;
     top: 70px;
@@ -171,10 +187,16 @@ section#one {
     margin: 0 auto;
     transform: skewY(-10deg);
     color: #ffffe6; }
+    @media (min-width: 500px) {
+      section#one .content-wrapper {
+        width: 75%; } }
+    @media (min-width: 600px) {
+      section#one .content-wrapper {
+        width: 65%; } }
     @media (min-width: 800px) {
       section#one .content-wrapper {
-        grid-template-columns: 1.5fr 1fr;
-        grid-template-areas: "text image";
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-areas: "image text";
         width: 90%;
         margin: 0 auto; } }
     @media (min-width: 1000px) {
@@ -183,10 +205,10 @@ section#one {
         width: 80%; } }
     @media (min-width: 1150px) {
       section#one .content-wrapper {
-        width: 70%; } }
+        width: 80%; } }
     section#one .content-wrapper .text {
       grid-area: text;
-      margin: -20px auto 0;
+      margin: 20px auto 0;
       line-height: 1.5; }
       section#one .content-wrapper .text h2 {
         text-align: center;
@@ -203,27 +225,54 @@ section#one {
       box-shadow: 1px 2px 4px 1px rgba(100, 100, 100, 0.6);
       margin: 0 auto;
       background: #9990d3; }
-      @media (min-width: 800px) {
-        section#one .content-wrapper .img-container {
-          width: 250px;
-          height: 250px; } }
-      @media (min-width: 1000px) {
+      @media (min-width: 500px) {
         section#one .content-wrapper .img-container {
           width: 300px;
           height: 300px; } }
+      @media (min-width: 600px) {
+        section#one .content-wrapper .img-container {
+          width: 350px;
+          height: 350px; } }
+      @media (min-width: 800px) {
+        section#one .content-wrapper .img-container {
+          width: 250px;
+          height: 250px;
+          margin: auto; } }
+      @media (min-width: 1000px) {
+        section#one .content-wrapper .img-container {
+          width: 350px;
+          height: 350px; } }
+      @media (min-width: 1150px) {
+        section#one .content-wrapper .img-container {
+          width: 400px;
+          height: 400px;
+          margin: 20px auto; } }
 
 section#two {
   position: relative;
   top: -250px;
   z-index: 0;
-  background: #bbb5e1;
+  background: #aaa2da;
   width: 100%;
-  height: 850px;
+  height: 1100px;
   transform: skewY(-10deg);
   font-family: 'Lato', sans-serif; }
+  @media (min-width: 600px) {
+    section#two {
+      top: -300px; } }
+  @media (min-width: 800px) {
+    section#two {
+      top: -350px; } }
+  @media (min-width: 1000px) {
+    section#two {
+      top: -350px; } }
+  @media (min-width: 1150px) {
+    section#two {
+      top: -390px; } }
   section#two .content-wrapper {
     display: grid;
     grid-template-rows: 100%;
+    grid-gap: 30px;
     grid-template-areas: "image" "text";
     position: relative;
     top: 70px;
@@ -232,10 +281,16 @@ section#two {
     margin: 0 auto;
     transform: skewY(10deg);
     color: #ffffe6; }
+    @media (min-width: 500px) {
+      section#two .content-wrapper {
+        width: 75%; } }
+    @media (min-width: 600px) {
+      section#two .content-wrapper {
+        width: 65%; } }
     @media (min-width: 800px) {
       section#two .content-wrapper {
-        grid-template-columns: 1fr 1.5fr;
-        grid-template-areas: "image text";
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-areas: "text image";
         width: 90%;
         margin: 0 auto; } }
     @media (min-width: 1000px) {
@@ -244,10 +299,10 @@ section#two {
         width: 80%; } }
     @media (min-width: 1150px) {
       section#two .content-wrapper {
-        width: 70%; } }
+        width: 80%; } }
     section#two .content-wrapper .text {
       grid-area: text;
-      margin: 50px auto 0;
+      margin: 20px auto 0;
       line-height: 1.5; }
       section#two .content-wrapper .text h2 {
         text-align: center;
@@ -264,13 +319,124 @@ section#two {
       box-shadow: 1px 2px 4px 1px rgba(100, 100, 100, 0.6);
       margin: auto;
       background: #9990d3; }
-      @media (min-width: 800px) {
-        section#two .content-wrapper .img-container {
-          width: 250px;
-          height: 250px; } }
-      @media (min-width: 1000px) {
+      @media (min-width: 500px) {
         section#two .content-wrapper .img-container {
           width: 300px;
           height: 300px; } }
+      @media (min-width: 600px) {
+        section#two .content-wrapper .img-container {
+          width: 350px;
+          height: 350px; } }
+      @media (min-width: 800px) {
+        section#two .content-wrapper .img-container {
+          width: 250px;
+          height: 250px;
+          margin: auto; } }
+      @media (min-width: 1000px) {
+        section#two .content-wrapper .img-container {
+          width: 350px;
+          height: 350px; } }
+      @media (min-width: 1150px) {
+        section#two .content-wrapper .img-container {
+          width: 400px;
+          height: 400px;
+          margin: 20px auto; } }
+
+section#three {
+  position: relative;
+  top: -320px;
+  z-index: 0;
+  background: #e0af80;
+  width: 100%;
+  height: 1000px;
+  transform: skewY(10deg);
+  font-family: 'Lato', sans-serif; }
+  @media (min-width: 500px) {
+    section#three {
+      height: 950px; } }
+  @media (min-width: 600px) {
+    section#three {
+      height: 1050px; } }
+  @media (min-width: 800px) {
+    section#three {
+      height: 700px; } }
+  @media (min-width: 1000px) {
+    section#three {
+      height: 800px; } }
+  @media (min-width: 1150px) {
+    section#three {
+      height: 800px; } }
+  section#three .content-wrapper {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-gap: 30px;
+    grid-template-areas: "image" "text";
+    position: relative;
+    top: 70px;
+    left: 0;
+    width: 90%;
+    margin: 0 auto;
+    transform: skewY(-10deg);
+    color: #ffffe6; }
+    @media (min-width: 500px) {
+      section#three .content-wrapper {
+        width: 75%; } }
+    @media (min-width: 600px) {
+      section#three .content-wrapper {
+        width: 65%; } }
+    @media (min-width: 800px) {
+      section#three .content-wrapper {
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-areas: "image text";
+        width: 90%;
+        margin: 0 auto; } }
+    @media (min-width: 1000px) {
+      section#three .content-wrapper {
+        grid-template-columns: 1fr 1fr;
+        width: 80%; } }
+    @media (min-width: 1150px) {
+      section#three .content-wrapper {
+        width: 80%; } }
+    section#three .content-wrapper .text {
+      grid-area: text;
+      margin: 20px auto 0;
+      line-height: 1.5; }
+      section#three .content-wrapper .text h2 {
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 2rem; }
+      section#three .content-wrapper .text p {
+        font-size: 1.1rem; }
+    section#three .content-wrapper .img-container {
+      position: relative;
+      grid-area: image;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      box-shadow: 1px 2px 4px 1px rgba(100, 100, 100, 0.6);
+      margin: 0 auto;
+      background: #9990d3; }
+      @media (min-width: 500px) {
+        section#three .content-wrapper .img-container {
+          width: 300px;
+          height: 300px; } }
+      @media (min-width: 600px) {
+        section#three .content-wrapper .img-container {
+          width: 350px;
+          height: 350px; } }
+      @media (min-width: 800px) {
+        section#three .content-wrapper .img-container {
+          width: 250px;
+          height: 250px;
+          margin: auto; } }
+      @media (min-width: 1000px) {
+        section#three .content-wrapper .img-container {
+          width: 350px;
+          height: 350px; } }
+      @media (min-width: 1150px) {
+        section#three .content-wrapper .img-container {
+          width: 400px;
+          height: 400px;
+          margin: 20px auto; } }
 
 /*# sourceMappingURL=index.css.map */
